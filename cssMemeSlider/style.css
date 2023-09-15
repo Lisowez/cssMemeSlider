@@ -7,12 +7,12 @@
   background-color: gray;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .img-div{
   height: 90%;
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   overflow: hidden;
@@ -23,6 +23,8 @@
 .imgimgimg{
 height: 100%;
 width: 400%;
+transform: translateY(0%); 
+transition: .5s;
 }
 
 
@@ -32,20 +34,23 @@ width: 400%;
 }
 
 .navigation{
-  height: 100%;
+  height: 10%;
   width: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 8%;
 }
 
 .lbl{
-  height: 10%;
+  height: 100%;
   width: 10%;
   background-color:burlywood ;
   border-radius: 50%;
   opacity: .5;
   transition: .5s;
+  margin-top: 15%;
+  margin-right: 5%;
 }
 .lbl:hover{
   opacity: 1;
@@ -57,18 +62,27 @@ width: 400%;
   width: 65%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
   overflow: hidden;
+}
+
+.span-div{
+  width: 400%;
+  height: 100%;
+  display: flex;
+  margin-left: 14%;
+  transform: translateX(0);
+  transition: .5s;
 }
 
 .mem-text{
   display:block;
-  width: 65%;
+  width: 85%;
   height: 100%;
   text-align: center;
   color: aqua;
   font-size: 25px;
   margin-top: .5%;
+  text-align: start;
 }
 
 .text-nav{
@@ -77,22 +91,39 @@ width: 400%;
   display: flex;
 }
 
-
-
 input[name='but']{
   visibility: hidden;
 }
 
-#but1:checked ~ .i1{
-margin-left: 0;
-}
-#but2:checked ~ .i1{
-margin-left: -25%;
-}
-#but3:checked ~ .i1{
-margin-left: -50%;
-}
-#but4:checked ~ .i1{
-margin-left: -100%;
+#b1:checked ~ .span-div {
+  transform: translateX(0%);
 }
 
+#b2:checked ~ .span-div {
+  transform: translateX(-25%);
+}
+
+#b3:checked ~ .span-div{  
+  transform: translateX(-50%);
+}
+
+#b4:checked ~ .span-div {
+ transform: translateX(-75%);
+}
+
+
+#b1:checked ~ .imgimgimg {
+  transform: translateY(0%); 
+}
+
+#b2:checked ~ .imgimgimg {
+  transform: translateY(-101%); 
+}
+
+#b3:checked ~ .imgimgimg{  
+  transform: translateY(-201%); 
+}
+
+#b4:checked ~ .imgimgimg {
+ transform: translateY(-302%); 
+}
