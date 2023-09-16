@@ -14,4 +14,8 @@
   .text-div{
     width: 100%;
   }
+
+  .mem-text{
+    font-size: 15px;
+  }
 }
