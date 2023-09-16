@@ -1,13 +1,16 @@
-
+body{
+background-image: url(img/Trollface.svg.png);
+background-color: aqua;
+}
 
 .main{
-  height: 90vh;
+  height: 70vh;
   width: 70vw;
   margin: auto;
-  background-color: gray;
   display: flex;
   flex-direction: column;
-  /*overflow: hidden;*/
+  margin-top: 15vh;
+  overflow: hidden;
 }
 
 .img-div{
@@ -38,14 +41,13 @@ transition: .5s;
   width: 25%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  padding-right: 8%;
+  align-items: center;  
 }
 
 .lbl{
   height: 100%;
   width: 10%;
-  background-color:burlywood ;
+  background-color:black ;
   border-radius: 50%;
   opacity: .5;
   transition: .5s;
@@ -69,7 +71,6 @@ transition: .5s;
   width: 400%;
   height: 100%;
   display: flex;
-  margin-left: 14%;
   transform: translateX(0);
   transition: .5s;
 }
@@ -79,16 +80,17 @@ transition: .5s;
   width: 85%;
   height: 100%;
   text-align: center;
-  color: aqua;
+  color: black;
   font-size: 25px;
-  margin-top: .5%;
   text-align: start;
 }
 
 .text-nav{
-  width: 100%;
+  margin: auto;
+  width: 80%;
   height: 25%;
   display: flex;
+  background-color: aqua;
 }
 
 input[name='but']{
@@ -127,3 +129,6 @@ input[name='but']{
 #b4:checked ~ .img-div .imgimgimg {
  transform: translateY(-302%); 
 }
+
+
+
