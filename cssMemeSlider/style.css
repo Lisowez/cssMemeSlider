@@ -114,21 +114,20 @@ input[name='but']{
 }
 
 
-#b1:checked ~ .img-div .imgimgimg {
+#b1:checked ~ .img-div .images {
   transform: translateY(0%); 
 }
 
-#b2:checked ~ .img-div .imgimgimg {
+#b2:checked ~ .img-div .images {
   transform: translateY(-101%); 
 }
 
-#b3:checked ~ .img-div .imgimgimg{  
+#b3:checked ~ .img-div .images{  
   transform: translateY(-201%); 
 }
 
-#b4:checked ~ .img-div .imgimgimg {
+#b4:checked ~ .img-div .images {
  transform: translateY(-302%); 
 }
-
 
 
