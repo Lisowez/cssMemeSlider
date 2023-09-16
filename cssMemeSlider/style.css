@@ -60,6 +60,20 @@ transition: .5s;
   cursor: pointer;
 }
 
+#b1:checked ~ .text-nav .l1{
+  opacity: 1;
+}
+#b2:checked ~ .text-nav .l2{
+  opacity: 1;
+}
+#b3:checked ~ .text-nav .l3{
+  opacity: 1;
+}
+#b4:checked ~ .text-nav .l4{
+  opacity: 1;
+}
+
+
 .text-div{
   width: 65%;
   height: 100%;
